@@ -1,0 +1,25 @@
+<mat-form-field>
+  <mat-label>Select an option</mat-label>
+  <mat-select [(value)]="selected">
+    <mat-option>None</mat-option>
+    <mat-option value="option1">PC</mat-option>
+    <mat-option value="option2">PSN</mat-option>
+    <mat-option value="option3">XBOX</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>You selected: {{selected}}</p>
+<br>
+<form class = "example-form">
+  <input type = "text" [formControl] = "searchControl" placeholder="Steam Account ID">
+</form>
+<br>
+<br>
+Player ID:
+<br>
+{{runs.username}}
+<br><br>
+Wins:
+<br>
+{{runs.level}}
+<br>
